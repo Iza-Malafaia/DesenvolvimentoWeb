@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+    background-color: rgba(192, 185, 197, 0.915);
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #b0adbe;
+    color: aliceblue;
+
+    line-height: 60px; /* altura da linha */
+}
+
+body {
+    background-color:rgba(143, 143, 146, 0.915);
+    
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;           /* flex-wrap quebra assim que acaba a linha */
+    gap: 10px;
+
+}
+img {
+    width:350px;                                                 /* block vai de cima pra baixo */
+    height: 300px;                                              /* flex vai um do lado do outro */
+    border: 3px solid rgb(6, 6, 32);
+    border-radius: 6px; /* arredondar bordas */
+}
+
+figcaption{
+    text-align: center;
+    color: white;
+}
+
+
+footer{
+    text-align: right;
+    line-height: 80px;
+    border-top: 4px solid rgb(130, 112, 148);
+}
+
