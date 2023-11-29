@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5vh;
+    width: 100%;
+    background-color: #FF9800;
+    position: relative;
+    z-index: 1;
+    box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.3);
+  -webkit-box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.4);
+  -moz-box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.5);
+}
+
+body {
+    background-color: #1e4957;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    width: 40%;
+    height: 10vh;
+    
+}
+.logo img {
+    width: 80px;
+    padding-left: 3rem;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    height: 4vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0 30px;
+}
+
+.menu a:hover {
+    transition: 0.5s all;
+    background: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    color: #FF9800;
+}
+.lupa {
+    width: 50px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    background-color: white;
+    border: #ffffff solid 2px;
+}
+
+.lupa:hover {
+    transition: 0.5s all;
+    padding: 2px 70px;
+    padding-right: 40px;
+}
+
+main { 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, #0000 0%, #1e4957 70%);
+  backdrop-filter:blur(2px);
+}
+
+.primeiro article {
+  display: flex;
+  padding: 1rem 2rem;
+  text-align: justify;
+}
+
+h1 {
+  margin: 1rem;
+  text-align: center;
+  font-size: 2rem
+}
+
+.primeiro {
+    color: white;
+    text-shadow: 0px 0px 13px rgba(3, 3, 3, 0.274);
+    background-color: #1e4957;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.about {
+  letter-spacing: 0.1rem;
+  width: 54%;
+  text-align: justify;
+}
+
+.imagem {
+  width: 40%;
+}
+
+.segundo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem ;
+  border-top: 1px solid white;
+  background-color: #FF9800;
+  color: rgb(245, 224, 224);
+  width: 100%;
+  height: 70vh;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 30px;
+}
+
+.segundo h1 {
+ width: 100vw;
+ margin: 0.5rem;
+}
+
+.Santander {
+  width: 30%;
+ 
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  border-radius: 15px;
+  font-size: 15px;
+
+}
+
+
+
+.Localiza {
+  width: 30%;
+  
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  border-radius: 15px;
+  font-size: 15px;
+ 
+}
+
+.Tovths {
+  width: 30%;
+
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  border-radius: 15px;
+  font-size: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comb {
+  border-top: 1px solid white;
+    background-color: #FF9800;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.titulo {
+    color: #fff;
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 50vh;
+    width: 50vw;
+    background-color: #FF9800;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  .slide.atual {
+    opacity: 1;
+  }
+  .slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+  }
+  .slide .content h1 {
+    margin-bottom: 10px;
+  }
+  .slide.atual .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+  }
+  .buttons button#next {
+    position: absolute;
+    top: 280%;
+    right: 15px;
+  }
+  .buttons button#prev {
+    position: absolute;
+    top: 280%;
+    left: 15px;
+  }
+  .buttons button {
+    font-size: 2rem;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+  }
+  .buttons button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  @media (max-width: 500px) {
+    .slide .content {
+      bottom: -300px;
+      left: 0;
+      width: 100%;
+    }
+    .slide.atual .content {
+      transform: translateY(-300px);
+    }
+  }
+  /* Backgorund Images */
+  .slide:first-child {
+    background: url("img/evasaoescolar.jpeg") no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(2) {
+    background: url("img/ods.png") no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(3) {
+    background: url("https://source.unsplash.com/TMOeGZw9NY4/1600x900") no-repeat
+      center top/cover;
+  }
+
+.equipe {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.equipe div {
+    text-align: center;
+}
+.foto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+
+
+
