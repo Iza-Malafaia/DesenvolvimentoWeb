@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5vh;
+    width: 100%;
+    background-color: #FF9800;
+    /*  position: relative;*/
+    z-index: 1;
+    
+    box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.3);
+-webkit-box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.4);
+-moz-box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.5);
+}
+body {
+    background-color: #175264;
+}
+
+.logo {
+    display: flex;
+    width: 40%;
+    height: 10vh;
+    
+}
+.logo img {
+    width: 80px;
+    padding-left: 3rem;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    height: 4vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0 30px;
+}
+
+.menu a:hover {
+    transition: 0.5s all;
+    background: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    color: #FF9800;
+}
+.lupa {
+    width: 50px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    background-color: white;
+    border: #ffffff solid 2px;
+    cursor: pointer;
+}
+
+.lupa:hover {
+    transition: 0.5s all;
+    padding: 2px 70px;
+    padding-right: 40px;
+}
+
+main { 
+    width: 100%;
+    display: flex;
+    
+}
+.esquerda {
+    margin-top: 40px;
+    padding-left: 20px;
+}
+.esquerda h1 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+
+}
+.esquerda input {
+    border: white 1px solid;
+    border-radius: 25px;
+    width: 150px;
+    height: 15px;
+}
+.esquerda .enviar {
+    width: 70px;
+    height: 30px;
+}
+.esquerda .btn {
+    width: 200px;
+    height: 30px;
+}
+.esquerda div h1 {
+    margin-top: 3rem;
+}
+.esquerda img {
+    width: 30px;
+    padding-left: 10px;
+}
+.inputs {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+.container {
+    color: white;
+    display: flex;
+}
+.container .direita {
+    margin-top: 3rem;
+    margin-left: 13rem;
+    font-size: 10px
+}
+.container .direita h1 {
+    font-weight: 100;
+}
+.linha {
+    display: flex;
+ /*    gap: 10rem;
+    column-gap: 40px; */
+
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 5%;
+
+
+
+   
+}
+
+.boxes{
+
+    display: flex;
+
+    justify-content: space-between;
+
+
+
+}
+.box{
+    background-color: rgb(131, 131, 131);
+    width: 30%;
+
+/*     padding: 4rem 4rem;
+    margin-bottom: 2rem;
+    text-align: center; */
+
+}
+
+@media screen and (max-width: 700px) {
+    body {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+}
+
+main {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.esquerda {
+    width: 100%;
+   /*  display: flex; */
+    justify-content: center; 
+    text-align: left;
+  }
+
+.inputs {
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+
+  */
+  .logo img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  header {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    margin: 0;
+  }
+
+  .menu {
+    
+    font-size: 14px;
+    margin-top: 5%;
+    
+
+  }
+
+  a:hover{
+    background: none;
+
+  }
+}
