@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+
+    <style>
+        body{
+            height: 100hv;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby{
+            width:300px;
+            height:300px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        /* declaraçao de variaveis */
+        var Acessoglobal; /* declaraçao da variavel vazia */
+        // const é um tipo de constante//
+        const nãoMuda = 'esse valor é imutável';
+        //let variável de escopo local
+        let AcessoLocal;
+
+        //declaraçao multiplas
+        let nome, idade, altura;
+        let num1 = 3,num2 = 6, num3 = 9;
+        var txt1 = 'que', txt2 = 'calor', txt3 = 'danado';
+        const cachorro = 'AuAu';
+        
+        nome = prompt ('diga seu nome');
+        idade = prompt ('diga sua idade');
+
+        window.document.write('<h3>Salvee,' + nome + '!</h3>');
+
+        /* Modo abreviado */
+        document.write (nome + ', você tem:' + idade + 'anos'+ '<br>');
+        document.write ('<br>');
+        document.write ('clique na imagem para ver' + '<br>');
+        document.write ('<img class="baby" src="baby.png"/>');
+
+        /* armazenando a imagem no lado JS */
+        let imgClique= document.querySelector('.baby');
+        imgClique.addEventListener('click', function(){
+            let qntdFilhos = Math.floor(Math.random()* 10);
+
+            document.write(nome + ',você apesar de já ter' + idade + 'anos,');
+            document.write('<br> seu karma é ter' + qntdFilhos + 'de filhos correndo atrás de você');
+            document.write('<br> HAHAHA!');
+
+        } )
+
+    
+
+
+    </script>
+
+</body>
+</html>

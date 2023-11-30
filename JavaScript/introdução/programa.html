@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar um programa</title>
+</head>
+<body>
+    <script>
+        
+        let  cliente, valor, produtos, Parcelas;total
+        const juros= 10/100;
+        total= (valor += juros)
+
+        cliente = prompt ('Qual seu nome');
+        produtos = prompt ('qual produto você comprou?');
+        valor = prompt ('qual o valor do produto?');
+        parcelas= prompt ('quantas vezes você quer parcelar?')
+
+        window.document.write('<h3>Oii,' + ' '+ cliente + '!</h3>');
+
+        window.document.write('<h3>' + cliente + 'o/a:' + produto + 'custou'+ valor + 'reais '+ '!</h3>');
+        document.write ('<br>');
+
+        window.document.write('<h3>' + cliente + ', você escolheu parcelar em :' + parcelas + 'vezes'+ '!</h3>');
+
+        window.document.write('<h3>' + 'cada parcela sem os juros custa:'+  (valor /=parcelas )+ 'reais'+ '!</h3>');
+
+        window.document.write('<h3>'+ (valor += juros == total)+ ' ' + 'com juros cada parcela fica:'+ total+'reais'+ '!</h3>');
+
+    
+    </script>
+    
+    
+</body>
+</html>

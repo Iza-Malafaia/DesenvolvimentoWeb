@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saque Sant</title>
+</head>
+<body>
+    <script>
+        let nome, valor, saque;
+
+        nome = prompt ('diga seu nome');
+        valor = prompt ('quanto quer depositar');
+        saque = prompt ('quanto quer sacar?');
+
+        window.document.write('<h3>Oii,' + ' '+ nome + '!</h3>');
+
+        window.document.write('<h3>' + nome + ', você depositou:' + valor + 'reais' + '!</h3>');
+        document.write ('<br>');
+
+        window.document.write('<h3>'+ ' ' + nome + ', você sacou:' + saque + 'reais'+ '!</h3>');
+
+        window.document.write('<h3>'+ ' ' + nome + ', seu saldo total é' + (valor -= saque) + 'reais'+ '!</h3>');
+
+    </script>
+    
+</body>
+</html>
