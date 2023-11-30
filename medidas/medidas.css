@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-size: 16px;
+}
+section#primeiro{
+    font-size: 1em;
+    background-color: brown
+    
+}
+.texto bloco{
+    font-size:1.5em ;
+    background-color:  chartreuse;
+}
+
+    
+
+section#segundo{
+    font-size: 2em;
+    background-color: green;
+}
+.segundo-segundo{
+    background-color: aqua;
+    
+}
