@@ -1,0 +1,29 @@
+section {
+    border: 1px solid #349bf4;
+}
+
+div{
+    border: 1px solid black;
+    width:60px;
+    height: 80px;
+    margin: 1rem;
+}
+
+.esquerda {
+    background-color: #66a5dc;
+    float: left;
+}
+
+.meio{
+    background-color: rgb(119, 214, 119);
+    float: left;
+}
+
+.direita{
+    background-color: rgb(176, 157, 195);
+    float: left;
+}
+
+.cancela{
+    clear: both;
+}
