@@ -1,0 +1,17 @@
+.social img {
+    width: 50%;
+    height: 70%;
+
+    position: absolute;
+    left: -150px;
+    top: 500px;
+
+}
+div .redes {
+    width: 13%;
+    height: 10%;
+
+    position: absolute;
+    left: 50px;
+    top: 500px;
+}

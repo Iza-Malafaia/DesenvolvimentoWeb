@@ -1,0 +1,109 @@
+.container {
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+.container h1 {
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.container h3 {
+    font-weight: 400;
+    margin-top: 2.5rem;
+    color: rgb(60, 255, 0);
+}
+
+.container span {
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(62, 255, 3);
+}
+
+.container p {
+    width: 50%;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+.navegation2 {
+    display: flex;
+}
+.foto {
+    width: 35%;
+    height: 20%;
+
+    padding-left: 2%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.button {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    background-color: transparent;
+}
+.btn { 
+    position: relative;
+    z-index: 999;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+
+    border: 1px solid white;
+    border-radius: 5rem;
+
+    padding: .5rem 2rem;
+    background-color: transparent;
+}
+.shadow {
+    position: absolute;
+    z-index: -9;
+    top: 10px; left: -8px;
+
+    padding: 1rem 4.3rem;
+
+    border: 3px solid rgb(25, 25, 27);
+    border-radius: 5rem;
+    opacity: 0.5;
+}   
+
+.shadow2 {
+    position: absolute;
+    z-index: -9;
+    top: 10px; left: 160px;
+
+    padding: 1rem 4rem;
+
+    border: 3px solid rgb(25, 25, 27);
+    border-radius: 5rem;
+    opacity: 0.5;
+}   
+
+
+.btn2 {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+
+    border: 1px solid white;
+    border-radius: 5rem;
+
+    padding: .5rem 2rem;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: rgb(60, 255, 0);
+    transition: .5s all;
+    color: rgb(38,41,46);
+}
+.btn2:hover {
+    background-color: rgb(60, 255, 0);
+    transition: .5s all;
+    color: rgb(38,41,46);
+}

@@ -1,0 +1,44 @@
+Projeto para Designer/cabecalho.css* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(38,41,46);
+    color: white;
+}
+
+header {
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 1.5rem 4rem;
+    width: 5%;
+    height: 20%;
+}
+
+.navegation {
+    width: 100vw;
+    padding-top: 3.8rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+
+.navegation a {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    
+    padding-left: 5rem;
+    padding-right: 4rem;
+}
+
+.navegation a:hover {
+    color: rgb(62, 255, 3);
+    transition: .5s all;
+}
