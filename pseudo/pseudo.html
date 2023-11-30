@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elementos</title>
+</head>
+
+<style>
+    *{ margin: 5px auto; padding: 0; border: 1px solid }
+    li:first-child{
+        background-color: rgb(226, 119, 43) ;   
+    }
+    li:last-child{
+        background-color:brown;
+        font-weight: bold;
+    }
+    li:nth-child(2){
+        background-color:yellow;
+    }
+    li:nth-child(3){
+        background-color:rgb(0, 191, 255);
+    }
+    li:nth-child(4){
+        background-color:rgb(43, 0, 255);
+    }
+
+    div:first-of-type{
+        background-color: pink;
+    }
+
+    P:first-of-type{
+        background-color: black;
+        color: white;
+        height: 50px;
+    }
+    p:last-of-type{
+        background-color:rgb(42, 157, 165);
+        height: 50px;
+    }
+</style>
+<body>
+    <p>Primeito filho de Body</p>
+
+    <section class="content">
+        <ul>
+            <li>Primeiro filho da ul</li>
+            <li>Segundo filho da ul</li>
+            <li>Terceiro filho da ul</li>
+            <li>Quarto filho da ul</li>
+            <li>Quinto filho da ul</li>
+        </ul>
+    </section>
+
+    <div>Primeira Div</div>
+    <div>Segunda Div</div>
+
+    <nav>
+        <a href="#"> Primeiro</a>
+        <a href="#"> Segundo</a>
+    </nav>
+    <p>
+        <ul>
+            <li>Primeiro li do &lt;P&gt;</li>
+            <li>Segundo li do &lt;P&gt;</li>
+        </ul>
+    </p>
+
+</body>
+</html>
