@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5vh;
+    width: 100%;
+    background-color: #FF9800;
+    /*  position: relative;*/
+    z-index: 1;
+    
+    box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.3);
+-webkit-box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.4);
+-moz-box-shadow: -1px 4px 22px 4px rgba(0,0,0,0.5);
+}
+body {
+    background-color: #175264;
+}
+
+.logo {
+    display: flex;
+    width: 40%;
+    height: 10vh;
+    
+}
+.logo img {
+    width: 80px;
+    padding-left: 3rem;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    height: 4vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0 30px;
+}
+
+.menu a:hover {
+    transition: 0.5s all;
+    background: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    color: #FF9800;
+}
+.lupa {
+    width: 50px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    background-color: white;
+    border: #ffffff solid 2px;
+    cursor: pointer;
+}
+
+.lupa:hover {
+    transition: 0.5s all;
+    padding: 2px 70px;
+    padding-right: 40px;
+}
+
+main { 
+    width: 100%;
+    display: flex;
+    
+}
+.esquerda {
+    margin-top: 100px;
+    padding-left: 5rem;
+    width: 30%;
+}
+.esquerda h1 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+
+}
+.esquerda input {
+    border: white 1px solid;
+    border-radius: 25px 0 0 25px;
+    width: 60px;
+    height: 15px;
+}
+.esquerda .enviar {
+    width: 60px ;
+    height: 30px;
+    border-radius: 0 25px 25px 0;
+    border: 1px solid white;
+    background-color: white;
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+.esquerda .btn {
+    width: 120px;
+    height: 30px;
+}
+.esquerda div h1 {
+    margin-top: 3rem;
+}
+.esquerda img {
+    width: 30px;
+    padding-left: 10px;
+}
+.inputs {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+.container {
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.container .direita {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 8rem;
+    font-size: 10px
+}
+.container h1 {
+    width: 100%;
+    font-weight: 900;
+    position: relative;
+    right: 2rem;
+    top: -1rem;
+}
+.container p {
+    width: 130%;
+    position: relative;
+    right: 2rem;
+    top: -1rem;
+    
+}
+.linha {
+    display: flex;
+ /*    gap: 10rem;
+    column-gap: 40px; */
+
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2%; 
+
+
+
+   
+}
+.linha h2 {
+    margin-bottom: 2rem;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.boxes{
+
+    display: flex;
+
+    justify-content: space-between;
+    
+
+
+}
+.box{
+    background-color: #FF9800;
+    width: 40%;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    position: relative;
+    box-shadow: -20px 18px 20px 0px rgba(0,0,0,0.4);
+    margin-bottom: 2rem;
+
+/*     padding: 4rem 4rem;
+    margin-bottom: 2rem;
+    text-align: center; */
+
+}
+.box div {
+    color: rgb(255, 255, 255);
+    background-color: #175264;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #FF9800;
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+}
+.box div a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+}
+
+main {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.esquerda {
+    width: 100%;
+   /*  display: flex; */
+    justify-content: center; 
+    text-align: left;
+  }
+
+.inputs {
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+
+  */
+  .logo img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  header {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    margin: 0;
+  }
+
+  .menu {
+    
+    font-size: 14px;
+    margin-top: 5%;
+    
+
+  }
+
+  a:hover{
+    background: none;
+
+  }
+}
+#popup-container {
+    color: black;
+    width: 20%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border: none;
+   /*  opacity: 0;
+            transition: opacity 0.6s ease-in-out; */
+}
+#popup-container:hover {
+    opacity: 1;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    border: none;
+    top: -20px;
+    right: 10px;
+     left: -10px;
+    width: 500%;
+    height: 300%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(.8px);
+}

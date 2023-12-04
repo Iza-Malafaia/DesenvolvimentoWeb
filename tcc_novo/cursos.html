@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cursos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AlphaEsthus</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/tcclogo2.png" alt="logotype" width="200px" />
+      </div>
+      <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="programas.html">Programas</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <button class="lupa">
+          <img src="img/lupa.png" alt="lupa" width="23px" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="esquerda">
+          <h1>Filtro</h1>
+          <input class="btn" type="search" placeholder="   Buscar" />
+          <button class="enviar"><i class="fa-solid fa-magnifying-glass" style="color: #828079;"></i></button>
+
+
+          <div><h1>Tipo do curso</h1></div>
+
+          <div class="inputs">
+            <div>
+              <input type="checkbox" class="caixa" name="radio" />
+              <label for="caixa">Pré-vestibular</label>
+            </div>
+            <div>
+              <input class="caixa" type="checkbox" name="radio" />
+              <label for="caixa">Profissionalizante</label>
+            </div>
+            <div>
+              <input class="caixa" type="checkbox" name="radio" />
+              <label for="caixa">Curso Técnico</label>
+            </div>
+            <div>
+              <input class="caixa" type="checkbox" name="radio" />
+              <label for="caixa">Bootcamp</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="direita">
+          <div class="linha">
+            <h2>Pré-vestibular</h2>
+            
+
+            <div class="boxes">
+              <div class="box">
+              <h1>Descomplica</h1>
+                <p>Além de suas opções pagas, 
+                  o Descomplica oferece aulas 
+                  gratuitas no YouTube e em sua 
+                  plataforma, abrangendo várias
+                  disciplinas e conteúdos do ENEM.</p>
+                <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>Descomplica</h2>
+              <a href="https://descomplica.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+                function openPopup() {
+                    document.getElementById('popup-container').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                }
+            
+                function closePopup() {
+                    document.getElementById('popup-container').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }
+            </script>
+
+              
+              
+              
+              </div>
+              <div class="box">
+                <h1>Khan Academy</h1>
+                <p>Oferece uma ampla variedade de 
+                  aulas em vídeo e exercícios 
+                  interativos em diversas disciplinas, 
+                  incluindo Matemática, Ciências,
+                  Humanidades e mais.</p>
+              <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+              <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>Kha Academy</h2>
+              <a href="https://pt.khanacademy.org/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+    function openPopup() {
+        document.getElementById('popup-container').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup-container').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    }
+</script>
+              </div>
+              <div class="box">
+                <h1>Curso Enem Gratuito</h1>
+                <p> Disponibiliza videoaulas, 
+                  resumos, exercícios e simulados 
+                  voltados para o ENEM de forma gratuita.</p>
+              <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+            </div>
+            <div id="popup-container">
+              <h2>Curso Enem Gratuito</h2>
+              <a href="https://cursoenemgratuito.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+            <script>
+              function openPopup() {
+                  document.getElementById('popup-container').style.display = 'block';
+                  document.getElementById('overlay').style.display = 'block';
+              }
+          
+              function closePopup() {
+                  document.getElementById('popup-container').style.display = 'none';
+                  document.getElementById('overlay').style.display = 'none';
+              }
+          </script>
+          </div>
+
+          <div class="linha">
+            <h2>Curso Técnico</h2>
+
+            <div class="boxes">
+              <div class="box">
+                <h1>SENAI</h1>
+                <p>O SENAI oferece diversos 
+                  cursos técnicos presenciais
+                   e a distância em áreas como 
+                  Eletrônica, Mecânica, Logística, 
+                  Informática, entre outros.</p>
+                  <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                  <div id="overlay"></div>
+  
+                <div id="popup-container">
+                <h2>Descomplica</h2>
+                <a href="https://descomplica.com.br/">Clique aqui!</a>
+                <button onclick="closePopup()">Fechar</button>
+                </div>
+                <script>
+                  function openPopup() {
+                      document.getElementById('popup-container').style.display = 'block';
+                      document.getElementById('overlay').style.display = 'block';
+                  }
+              
+                  function closePopup() {
+                      document.getElementById('popup-container').style.display = 'none';
+                      document.getElementById('overlay').style.display = 'none';
+                  }
+              </script>
+              </div>
+              <div class="box">
+                <h1>Pronatec</h1>
+                <p>O Pronatec oferece 
+                  cursos técnicos gratuitos 
+                  em parceria com instituições 
+                  públicas e privadas em todo o Brasil.</p>
+                  <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                  <div id="overlay"></div>
+  
+                <div id="popup-container">
+                <h2>Descomplica</h2>
+                <a href="https://descomplica.com.br/">Clique aqui!</a>
+                <button onclick="closePopup()">Fechar</button>
+                </div>
+                <script>
+                  function openPopup() {
+                      document.getElementById('popup-container').style.display = 'block';
+                      document.getElementById('overlay').style.display = 'block';
+                  }
+              
+                  function closePopup() {
+                      document.getElementById('popup-container').style.display = 'none';
+                      document.getElementById('overlay').style.display = 'none';
+                  }
+              </script>
+              </div>
+              <div class="box">
+                <h1>Fundação Bradesco</h1>
+                <p>A Fundação Bradesco 
+                  oferece diversos cursos 
+                  gratuitos, incluindo alguns na área técnica, através da Escola Virtual.</p>
+                  <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                  <div id="overlay"></div>
+  
+                <div id="popup-container">
+                <h2>Descomplica</h2>
+                <a href="https://descomplica.com.br/">Clique aqui!</a>
+                <button onclick="closePopup()">Fechar</button>
+                </div>
+                <script>
+                  function openPopup() {
+                      document.getElementById('popup-container').style.display = 'block';
+                      document.getElementById('overlay').style.display = 'block';
+                  }
+              
+                  function closePopup() {
+                      document.getElementById('popup-container').style.display = 'none';
+                      document.getElementById('overlay').style.display = 'none';
+                  }
+              </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="linha">
+            <h2>Profissionalizantes</h2>
+
+            <div class="boxes">
+              <div class="box">
+                <h1>Alura </h1>
+                <p>Embora muitos cursos na Alura sejam pagos, eles também 
+                  oferecem algumas trilhas e cursos gratuitos em áreas 
+                  como programação, design, marketing, entre outras.</p>
+                <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>Alura </h2>
+              <a href="https://descomplica.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+                function openPopup() {
+                    document.getElementById('popup-container').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                }
+            
+                function closePopup() {
+                    document.getElementById('popup-container').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }
+            </script>
+              </div>
+              <div class="box">
+                <h1>Coursera</h1>
+                <p>A Coursera oferece uma variedade de cursos gratuitos e pagos
+                   em parceria com universidades e instituições 
+                   de todo o mundo. Alguns cursos oferecem certificados gratuitos.</p>
+                <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>Coursera</h2>
+              <a href="https://descomplica.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+                function openPopup() {
+                    document.getElementById('popup-container').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                }
+            
+                function closePopup() {
+                    document.getElementById('popup-container').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }
+            </script>
+              </div>
+              <div class="box">
+                <h1>Cursos da Microsoft Learn</h1>
+                <p>A Microsoft Learn oferece cursos 
+                  gratuitos em várias áreas, incluindo 
+                  tecnologia da informação, desenvolvimento de software e nuvem.</p>
+                <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>Microsoft Learn</h2>
+              <a href="https://descomplica.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+                function openPopup() {
+                    document.getElementById('popup-container').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                }
+            
+                function closePopup() {
+                    document.getElementById('popup-container').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }
+            </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="linha">
+            <h2>Bootcamp</h2>
+
+            <div class="boxes">
+              <div class="box">
+                <h1>Microverse</h1>
+                <p>Microverse é uma escola online
+                   que oferece um programa de treinamento 
+                   intensivo e colaborativo em desenvolvimento web. Eles têm um modelo de
+                   pagamento baseado em taxa de renda futura, o que 
+                   significa que você paga quando conseguir um emprego.</p>
+                <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>Microverse</h2>
+              <a href="https://descomplica.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+                function openPopup() {
+                    document.getElementById('popup-container').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                }
+            
+                function closePopup() {
+                    document.getElementById('popup-container').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }
+            </script>
+              </div>
+              <div class="box">
+                <h1>FreeCodeCamp</h1>
+                <p>FreeCodeCamp oferece 
+                  bootcamps gratuitos em 
+                  desenvolvimento web, incluindo 
+                    HTML, CSS, JavaScript, Node.js e React.</p>
+                <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>FreeCodeCamp</h2>
+              <a href="https://descomplica.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+                function openPopup() {
+                    document.getElementById('popup-container').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                }
+            
+                function closePopup() {
+                    document.getElementById('popup-container').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }
+            </script>
+              </div>
+              <div class="box">
+                <h1>Harvard's CS50x - Introduction to Computer Science</h1>
+                <p>O CS50x é um curso online gratuito da Universidade de Harvard 
+                  que oferece uma introdução abrangente à ciência da computação. 
+                  Embora não seja um bootcamp tradicional, 
+                  é um recurso valioso para quem deseja aprender programação.</p>
+                <div><a href="#" onclick="openPopup(); return false;">Veja mais</a></div>
+                <div id="overlay"></div>
+
+              <div id="popup-container">
+              <h2>Harvard's CS50x</h2>
+              <a href="https://descomplica.com.br/">Clique aqui!</a>
+              <button onclick="closePopup()">Fechar</button>
+              </div>
+              <script>
+                function openPopup() {
+                    document.getElementById('popup-container').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                }
+            
+                function closePopup() {
+                    document.getElementById('popup-container').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }
+            </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>
